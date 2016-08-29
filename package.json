@@ -1,0 +1,25 @@
+{
+  "name": "turf-filter-rings",
+  "version": "0.0.1",
+  "description": "Filter polygon rings with turf",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/babel-cli/bin/babel.js src/index.js --out-file index.js",
+    "test": "jest"
+  },
+  "author": "Peter Kupietz",
+  "license": "ISC",
+  "dependencies": {
+    "turf-multipolygon": "^1.0.1",
+    "turf-polygon": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-jest": "^14.1.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "jest-cli": "^14.1.0",
+    "turf-area": "^3.0.12",
+    "turf-linestring": "^1.0.2"
+  }
+}
