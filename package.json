@@ -9,6 +9,10 @@
   },
   "author": "Peter Kupietz",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuuup/turf-filter-rings.git"
+  },
   "dependencies": {
     "turf-multipolygon": "^1.0.1",
     "turf-polygon": "^1.0.3"
