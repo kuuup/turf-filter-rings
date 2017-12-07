@@ -1,6 +1,6 @@
 {
   "name": "turf-filter-rings",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Filter polygon rings with turf",
   "main": "index.js",
   "scripts": {
