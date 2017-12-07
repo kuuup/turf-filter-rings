@@ -22,8 +22,11 @@ const filterRings = (feature, filterFn) => {
             outerRing.forEach(ring => {
                 if(filterFn(ring)) rings.push(ring);
             });
-            outerRings.push(rings);
+            if(rings.length > 0) outerRings.push(rings);
         });
+        if(outerRings.length < 1) {
+            throw new Error('All rings removed!');
+        }
         return multiPolygon(outerRings, feature.properties || {});
     } else {
         throw new Error('Input feature must be a Polygon or MultiPolygon!');
